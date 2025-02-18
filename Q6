@@ -1,0 +1,27 @@
+package guviproject1;
+
+import java.util.Scanner;
+
+public class Tariff {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int month = scanner.nextInt();
+        int rent = scanner.nextInt();
+        int days = scanner.nextInt();
+        
+        double totalCost;
+        
+        if (month == 4 || month == 5 || month == 6 || month == 11 || month == 12) {
+            totalCost = rent * days * 1.20;
+        } else {
+            totalCost = rent * days * 1.00;
+        }
+        
+        System.out.printf("%.2f", totalCost);
+        
+        scanner.close();
+    }
+}
