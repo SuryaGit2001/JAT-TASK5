@@ -1,6 +1,7 @@
 package guviproject1;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Palindrome {
 
@@ -18,7 +19,9 @@ public class Palindrome {
 
  public static void main(String[] args) {
         
-     String s = "level";
+     Scanner scanner = new Scanner(System.in);
+     
+     String s = scanner.nextLine();
      
      boolean res = isPalindrome(s);
 
